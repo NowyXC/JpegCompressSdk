@@ -9,6 +9,7 @@ import android.graphics.Bitmap;
 public class JpegUtil {
     static {
         System.loadLibrary("compress");
+        System.loadLibrary("jpeg");
     }
 
     private JpegUtil() {
