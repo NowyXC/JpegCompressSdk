@@ -76,11 +76,11 @@ public class JpegUtil {
 
 
     /**
-     * 通过JNI图片压缩并把Bitmap保存到指定目录，如果原图小于maxSize(kb)，则返回false
-     * 注意项，如果原图小于maxSize，不会走压缩，也不会有文件输出
+     * 通过JNI图片压缩并把Bitmap保存到指定目录，如果原图小于targetSize(kb)，则返回false
+     * 注意项，如果原图小于targetSize，不会走压缩，也不会有文件输出
      *
      * 此方法是通过校验压缩结果的大小进行重新压缩，所以压缩耗时为  N(次)压缩时间之和
-     * 影响压缩时间的参数是  <maxSize的大小> 和 <quality的递减幅度>
+     * 影响压缩时间的参数是  <targetSize的大小> 和 <quality的递减幅度>
      *
      * @param filePath 原文件路径
      * @param outputPath 输出路径
