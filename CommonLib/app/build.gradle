@@ -51,7 +51,7 @@ dependencies {
 
 
 def SDK_BASENAME = "JpegCompressSdk";
-def SDK_VERSION = "_V1.0";
+def SDK_VERSION = "_V1.1";
 def sdkDestinationPath = "build";
 def zipFile = file('build/intermediates/bundles/release/classes.jar')
 
